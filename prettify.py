@@ -1,6 +1,10 @@
 #!/usr/bin/env python
+import sys
 
-from BeautifulSoup import BeautifulSoup
+try:
+    from BeautifulSoup import BeautifulSoup
+except:
+    sys.exit('Error: could not find BeautifulSoup module. Please type the following: pip install beautifulsoup')    
 
 import fileinput
 
